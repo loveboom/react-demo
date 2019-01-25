@@ -9,6 +9,7 @@ import SetState from './setState';
 import Props from './props';
 import MapListA from './mapList-element';
 import MapListB from './mapList';
+import ComponentMount from './componentMount';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
                     <li><Link to='/props'>Props</Link></li>
                     <li><Link to='/mapListA'>list循环(element-ui的table使用案例)</Link></li>
                     <li><Link to='/mapListB'>list循环(react)</Link></li>
+                    <li><Link to='/componentMount'>组件的生命周期</Link></li>
                 </ul>
                 <hr/>
                 <Route exact path="/" component={Events} />
@@ -32,6 +34,7 @@ class App extends Component {
                 <Route path="/props" component={Props} />
                 <Route path="/mapListA" component={MapListA} />
                 <Route path="/mapListB" component={MapListB} />
+                <Route path="/componentMount" component={ComponentMount} />
             </div>
         </Router>
     );

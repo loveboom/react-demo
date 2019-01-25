@@ -27,7 +27,7 @@ export default class Home extends Component{
   render () {
     return (
       <div>
-          <h1 onClick={this.handleClickOnTitle.bind(this, 'Hello')}>主页</h1>
+          <h1 onClick={this.handleClickOnTitle.bind(this, 'Hello')}>点我看console.log</h1>
       </div>
     )
   }
